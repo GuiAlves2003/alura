@@ -21,28 +21,28 @@
                 <fieldset>
                     <legend>Dados pessoais</legend>
                     <div>
-                        <label for="userName">Nome</label>
-                        <input type="text" name="userName" id="userName" required>
+                        <label for="name">Nome</label>
+                        <input type="text" name="userName" id="name" required>
                     </div>
                     <div>
-                        <label for="userAge">Idade</label>
-                        <input type="number" name="userAge" id="userAge" min="12" max="100" required>
+                        <label for="age">Idade</label>
+                        <input type="number" name="userAge" id="age" min="12" max="100" required>
                     </div>
                     <div>
-                        <label for="userBirth">Data de Nascimento</label>
-                        <input type="date" name="userBirth" id="userBirth">
+                        <label for="birth">Data de Nascimento</label>
+                        <input type="date" name="userBirth" id="birth">
                     </div>
                     <div>
-                        <label for="userEmail">Email</label>
-                        <input type="email" name="userEmail" id="userEmail" required>
+                        <label for="email">Email</label>
+                        <input type="email" name="userEmail" id="email" required>
                     </div>
                     <div>
-                        <label for="userPhone">Telefone</label>
-                        <input type="tel" name="userPhone" id="userPhone" maxlength="11" placeholder="DDD + num">
+                        <label for="phone">Telefone</label>
+                        <input type="tel" name="userPhone" id="phone" maxlength="11" placeholder="DDD + num">
                     </div>
                     <div>
-                        <label for="userPhoto">Upload de foto</label>
-                        <input type="file" accept="image/*" name="userPhoto" id="userPhoto">
+                        <label for="photo">Upload de foto</label>
+                        <input type="file" accept="image/*" name="userPhoto" id="photo">
                     </div>
                 </fieldset>
 
@@ -50,27 +50,27 @@
                     <legend>Perfil</legend>
                     <div>
                         <h2>Gênero</h2>
-                        <input type="radio" name="userGender" id="male">
-                        <label for="male" value="Masculino">Masculino</label>
-                        <input type="radio" name="userGender" id="female">
-                        <label for="female" value="Feminino">Feminino</label>
-                        <input type="radio" name="userGender" id="no-inform">
-                        <label for="no-inform" value="Prefiro não informar">Prefiro não informar</label>
+                        <input type="radio" name="userGender" id="genderMale" value="Masculino">
+                        <label for="genderMale">Masculino</label>
+                        <input type="radio" name="userGender" id="genderFemale" value="Feminino">
+                        <label for="genderFemale">Feminino</label>
+                        <input type="radio" name="userGender" id="genderNone" value="PrefiroNaoInformar">
+                        <label for="genderNone">Prefiro não informar</label>
                     </div>
                     <div>
-                        <label for="maritalStatus">Estado civil</label>
-                        <select name="maritalStatus" id="maritalStatus">
+                        <label for="marital">Estado civil</label>
+                        <select name="userMaritalStatus" id="marital">
                             <option value="">Selecione...</option>
                             <option value="Casado">Casado</option>
                             <option value="Solteiro">Solteiro</option>
                             <option value="Divorciado">Divorciado</option>
-                            <option value="União Estável">União Estável</option>
-                            <option value="Prefiro não informar">Prefiro não informar</option>
+                            <option value="UniaoEstavel">União Estável</option>
+                            <option value="PrefiroNaoInformar">Prefiro não informar</option>
                         </select>
                     </div>
                     <div>
                         <label for="state">Estado</label>
-                        <select name="state" id="state" required>
+                        <select name="userState" id="state" required>
                             <option value="">Selecione...</option>
                             <option value="AC">Acre</option>
                             <option value="AL">Alagoas</option>
@@ -103,7 +103,7 @@
                     </div>
                     <div>
                         <label for="city">Cidade</label>
-                        <input type="text" name="city" id="city">
+                        <input type="text" name="userCity" id="city">
                     </div>
                 </fieldset>
                 <fieldset>
@@ -111,42 +111,42 @@
                     <div>
                         <h2>Redes Sociais</h2>
                         <div>
-                            <input type="checkbox" name="social" id="instagram">
-                            <label for="instagram" value="instagram">Instagram</label>
+                            <input type="checkbox" name="userSocial" id="instagram" value="Instagram">
+                            <label for="instagram">Instagram</label>
                         </div>
                         <div>
-                            <input type="checkbox" name="social" id="facebook">
-                            <label for="facebook" value="facebook">Facebook</label>
+                            <input type="checkbox" name="userSocial" id="facebook" value="Facebook">
+                            <label for="facebook">Facebook</label>
                         </div>
                         <div>
-                            <input type="checkbox" name="social" id="tiktok">
-                            <label for="tiktok" value="tiktok">TikTok</label>
+                            <input type="checkbox" name="userSocial" id="tiktok" value="TikTok">
+                            <label for="tiktok">TikTok</label>
                         </div>
                         <div>
-                            <input type="checkbox" name="social" id="youtube">
-                            <label for="youtube" value="youtube">YouTube</label>
+                            <input type="checkbox" name="userSocial" id="youtube" value="YouTube">
+                            <label for="youtube">YouTube</label>
                         </div>
                         <div>
-                            <input type="checkbox" name="social" id="linkedin">
-                            <label for="linkedin" value="linkedin">LinkedIn</label>
+                            <input type="checkbox" name="userSocial" id="linkedin" value="LinkedIn">
+                            <label for="linkedin">LinkedIn</label>
                         </div>
                         <div>
-                            <input type="checkbox" name="social" id="x">
-                            <label for="x" value="x">X (Twitter)</label>
+                            <input type="checkbox" name="userSocial" id="x" value="X">
+                            <label for="x">X (Twitter)</label>
                         </div>
                         <div>
-                            <input type="checkbox" name="social" id="whatsapp">
-                            <label for="whatsapp" value="whatsapp">WhatsApp</label>
+                            <input type="checkbox" name="userSocial" id="whatsapp" value="WhatsApp">
+                            <label for="whatsapp">WhatsApp</label>
                         </div>
                         <div>
-                            <input type="checkbox" name="social" id="telegram">
-                            <label for="telegram" value="telegram">Telegram</label>
+                            <input type="checkbox" name="userSocial" id="telegram" value="Telegram">
+                            <label for="telegram">Telegram</label>
                         </div>
                     </div>
                     <div>
                         <label for="musicStyle">Estilo Musical</label>
-                        <input type="text" name="musicStyle" id="musicStyle" list="musicStyleList">
-                        <datalist id="musicStyleList">
+                        <input type="text" name="userMusicStyle" id="musicStyle" list="musicList">
+                        <datalist id="musicList">
                             <option value="Rock">
                             <option value="Pop">
                             <option value="Jazz">
@@ -154,8 +154,26 @@
                         </datalist>
                     </div>
                     <div>
-                        <label for="favoriteColor">Cor favorita</label>
-                        <input type="color" name="favoriteColor" id="favoriteColor">
+                        <label for="color">Cor favorita</label>
+                        <input type="color" name="userFavoriteColor" id="color">
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Opinião</legend>
+                    <div>
+                        <h2>O que você acha da qualidade do nosso serviço?</h2>
+                        <input type="radio" name="userServiceQuality" id="qualityOtimo" value="Otimo">
+                        <label for="qualityOtimo">Ótimo</label>
+                        <input type="radio" name="userServiceQuality" id="qualityBom" value="Bom">
+                        <label for="qualityBom">Boa</label>
+                        <input type="radio" name="userServiceQuality" id="qualityRegular" value="Regular">
+                        <label for="qualityRegular">Regular</label>
+                        <input type="radio" name="userServiceQuality" id="qualityRuim" value="Ruim">
+                        <label for="qualityRuim">Ruim</label>
+                    </div>
+                    <div>
+                        <label for="comment">Opinião</label>
+                        <textarea name="userComment" id="comment" placeholder="Digite aqui sua opinião"></textarea>
                     </div>
                 </fieldset>
 
