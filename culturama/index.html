@@ -46,6 +46,67 @@
                     </div>
                 </fieldset>
 
+                <fieldset>
+                    <legend>Perfil</legend>
+                    <div>
+                        <h2>Gênero</h2>
+                        <input type="radio" name="userGender" id="male">
+                        <label for="male" value="Masculino">Masculino</label>
+                        <input type="radio" name="userGender" id="female">
+                        <label for="female" value="Feminino">Feminino</label>
+                        <input type="radio" name="userGender" id="no-inform">
+                        <label for="no-inform" value="Prefiro não informar">Prefiro não informar</label>
+                    </div>
+                    <div>
+                        <label for="maritalStatus">Estado civil</label>
+                        <select name="maritalStatus" id="maritalStatus">
+                            <option value="">Selecione...</option>
+                            <option value="Casado">Casado</option>
+                            <option value="Solteiro">Solteiro</option>
+                            <option value="Divorciado">Divorciado</option>
+                            <option value="União Estável">União Estável</option>
+                            <option value="Prefiro não informar">Prefiro não informar</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="state">Estado</label>
+                        <select name="state" id="state" required>
+                            <option value="">Selecione...</option>
+                            <option value="AC">Acre</option>
+                            <option value="AL">Alagoas</option>
+                            <option value="AP">Amapá</option>
+                            <option value="AM">Amazonas</option>
+                            <option value="BA">Bahia</option>
+                            <option value="CE">Ceará</option>
+                            <option value="DF">Distrito Federal</option>
+                            <option value="ES">Espírito Santo</option>
+                            <option value="GO">Goiás</option>
+                            <option value="MA">Maranhão</option>
+                            <option value="MT">Mato Grosso</option>
+                            <option value="MS">Mato Grosso do Sul</option>
+                            <option value="MG">Minas Gerais</option>
+                            <option value="PA">Pará</option>
+                            <option value="PB">Paraíba</option>
+                            <option value="PR">Paraná</option>
+                            <option value="PE">Pernambuco</option>
+                            <option value="PI">Piauí</option>
+                            <option value="RJ">Rio de Janeiro</option>
+                            <option value="RN">Rio Grande do Norte</option>
+                            <option value="RS">Rio Grande do Sul</option>
+                            <option value="RO">Rondônia</option>
+                            <option value="RR">Roraima</option>
+                            <option value="SC">Santa Catarina</option>
+                            <option value="SP">São Paulo</option>
+                            <option value="SE">Sergipe</option>
+                            <option value="TO">Tocantins</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="city">Cidade</label>
+                        <input type="text" name="city" id="city">
+                    </div>
+                </fieldset>
+
                 <input type="submit" value="Enviar">
             </form>
         </section>
