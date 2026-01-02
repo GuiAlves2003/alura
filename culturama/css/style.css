@@ -42,9 +42,12 @@ form {
 }
 
 fieldset {
+    display: flex;
+    flex-direction: column;
     padding: 16px;
     border: 1px solid #ccc;
     border-radius: 8px;
+    gap: 24px;
 }
 
 legend {
@@ -54,10 +57,10 @@ legend {
 }
 
 input,
+select,
 textarea {
     width: 100%;
     padding: 16px;
-    margin-bottom: 24px;
     border: 1px solid #ccc;
     border-radius: 4px;
 }
