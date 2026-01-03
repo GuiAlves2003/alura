@@ -2,6 +2,9 @@
 body,
 img,
 h1,
+h2,
+h3,
+h4,
 p,
 fieldset,
 legend,
@@ -14,6 +17,13 @@ li {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    text-align: center;
 }
 
 /* END CSS RESET */
@@ -43,21 +53,35 @@ li {
 
 body {
     font-family: "Montserrat";
+    color: var(--text-primary-color);
 }
 
 .container {
-    padding: 88px 24px 0 24px;
+    padding: 88px 24px 0;
 }
 
-h1 {
+.section-title h2 {
+    font-size: 28px;
     font-weight: var(--title-weight);
-    color: var(--primary-color);
+    margin-bottom: 16px;
+}
+
+.section-title hr {
+    width: 180px;
+    height: 4px;
+    background-color: var(--secondary-color);
+}
+
+@media screen and (min-width: 762px) {
+    .section-title h2 {
+        font-size: 32px;
+    }
 }
 
 @media screen and (min-width: 1024px) {
     .container {
         margin: 0 auto;
         max-width: 1200px;
-        padding: 104px 120px 0 120px;
+        padding: 104px 120px 0;
     }
 }
