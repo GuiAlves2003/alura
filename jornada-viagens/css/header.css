@@ -1,6 +1,9 @@
 header {
     background-color: var(--background-tertiary-color);
     padding: 36px 24px;
+}
+
+header .container {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -10,8 +13,12 @@ header {
 
 .logo {
     display: inline-block;
-    width: 68px;
+    width: auto;
     height: 64px;
+}
+
+.logo-desktop {
+    display: none;
 }
 
 nav {
@@ -52,5 +59,23 @@ input[type="checkbox"]:checked ~ nav {
     .list-links {
         flex-direction: row;
         gap: 24px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .logo-desktop {
+        display: block;
+    }
+
+    .logo-mobile {
+        display: none;
+    }
+
+    header {
+        padding: 36px 120px;
+    }
+
+    .nav-link:hover {
+        color: var(--primary-color);
     }
 }

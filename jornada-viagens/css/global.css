@@ -49,3 +49,9 @@ h1 {
     font-weight: var(--title-weight);
     color: var(--primary-color);
 }
+
+@media screen and (min-width: 1024px) {
+    .container {
+        max-width: 1200px;
+    }
+}
