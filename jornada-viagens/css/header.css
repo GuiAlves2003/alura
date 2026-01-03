@@ -36,5 +36,21 @@ input[type="checkbox"]:checked ~ nav {
 
 .nav-link {
     color: var(--text-secondary-color);
+    font-size: 24px;
     text-decoration: none;
+}
+
+@media screen and (min-width: 768px) {
+    .nav-menu label {
+        display: none;
+    }
+
+    nav {
+        display: block;
+    }
+
+    .list-links {
+        flex-direction: row;
+        gap: 24px;
+    }
 }
